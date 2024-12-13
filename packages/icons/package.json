@@ -1,0 +1,29 @@
+{
+  "name": "@v3ms/icons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "scripts": {
+    "generate": "node generate.cjs && pnpm lint:script",
+    "lint:script": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lib": "vite build",
+    "build": "pnpm generate && pnpm lib"
+  },
+  "keywords": [],
+  "types": "es/src/index.d.ts",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@v3ms/utils": "workspace:^"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "svgo": "^3.2.0",
+    "typescript": "5.2.2",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^3.7.2"
+  }
+}

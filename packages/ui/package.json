@@ -1,0 +1,26 @@
+{
+  "name": "@v3ms/ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "mosuzi",
+  "license": "ISC",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "devDependencies": {
+    "@vue/runtime-core": "^3.4.15",
+    "sass": "^1.70.0",
+    "typescript": "5.2.2",
+    "vue": "^3.4.15"
+  },
+  "dependencies": {
+    "@arco-design/web-vue": "^2.54.3",
+    "@v3ms/icons": "workspace:^",
+    "@v3ms/utils": "workspace:^"
+  }
+}

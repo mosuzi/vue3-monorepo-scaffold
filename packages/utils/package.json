@@ -1,0 +1,26 @@
+{
+  "name": "@v3ms/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "types": "es/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "mosuzi",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/fetch-event-source": "^2.0.1",
+    "axios": "^1.6.7",
+    "vue": "^3.4.15"
+  },
+  "devDependencies": {
+    "typescript": "5.2.2",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^3.7.2"
+  }
+}

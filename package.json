@@ -1,0 +1,47 @@
+{
+  "name": "@mosuzi/vue3-monorepo-scaffold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "pnpm run --filter @v3ms/playground dev",
+    "lint:script": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+    "lint:style": "stylelint --fix \"**/*.{css,scss}\"",
+    "format": "prettier --write 'packages/**/*.ts'",
+    "build:icons": "pnpm run --filter @v3ms/icons build",
+    "lib:icons": "pnpm run --filter @v3ms/icons lib",
+    "build:utils": "pnpm run --filter @v3ms/utils build",
+    "prepare": "husky install",
+    "cm": "git cz"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "platform/*"
+  ],
+  "keywords": [],
+  "author": "mosuzi",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "commitizen": "^4.3.0",
+    "cz-customizable": "^7.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-vue": "^9.20.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "postcss-html": "^1.6.0",
+    "prettier": "^3.2.4",
+    "stylelint": "^16.2.0",
+    "stylelint-config-recess-order": "^4.4.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-prettier": "^5.0.0",
+    "typescript": "5.2.2"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@v3ms/playground",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "mosuzi",
+  "license": "ISC",
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.54.3",
+    "@arco-plugins/vite-vue": "^1.4.5",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "sass": "^1.70.0",
+    "vite": "^5.0.12",
+    "vite-plugin-chunk-split": "^0.5.0"
+  },
+  "dependencies": {
+    "@v3ms/icons": "workspace:^",
+    "@v3ms/ui": "workspace:^",
+    "@v3ms/utils": "workspace:^",
+    "axios": "^1.6.7",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.15",
+    "vue-router": "4"
+  }
+}
