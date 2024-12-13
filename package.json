@@ -12,6 +12,8 @@
     "lib:icons": "pnpm run --filter @v3ms/icons lib",
     "build:utils": "pnpm run --filter @v3ms/utils build",
     "prepare": "husky install",
+    "first": "pnpm build:utils && pnpm build:icons",
+    "demo": "pnpm first && pnpm serve",
     "cm": "git cz"
   },
   "private": true,

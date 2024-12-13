@@ -8,6 +8,18 @@
 >
 > [Arco Design Vue](https://arco.design/vue/component/overflow)
 
+初次启动实例，请在运行 `pnpm serve` 前先执行：
+
+```shell
+pnpm first
+```
+
+或者直接使用：
+
+```shell
+pnpm demo
+```
+
 ## 子项目
 
 ### icons
