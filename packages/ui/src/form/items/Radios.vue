@@ -7,7 +7,11 @@
     :required="required"
     :disabled="disabled"
   >
-    <ARadioGroup v-model="model[prop]" :default-value="defaultOption" :direction="direction">
+    <ARadioGroup
+      v-model="model[prop] as string | number | boolean"
+      :default-value="defaultOption"
+      :direction="direction"
+    >
       <ARadio v-for="item in computedOptions" :key="item.value" :value="item.value">
         <template #radio="{ checked }">
           <div class="dynamic-radio-content" :class="{ checked: checked }">

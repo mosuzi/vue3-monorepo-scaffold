@@ -7,7 +7,11 @@
     :required="required"
     :rules="computedRules"
   >
-    <AInput v-model="model[prop]" :placeholder="placeholder" :max-length="maxLength" />
+    <AInput
+      v-model="model[prop] as string | undefined"
+      :placeholder="placeholder"
+      :max-length="maxLength"
+    />
   </AFormItem>
 </template>
 

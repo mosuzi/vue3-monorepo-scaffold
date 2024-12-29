@@ -12,6 +12,17 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 9120
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler' // or "modern"
+          // modifyVars: {
+          //   'arcoblue-6': '#f85959'
+          // },
+          // javascriptEnabled: true
+        }
+      }
+    },
     plugins: [
       vue(),
       vitePluginForArco({
