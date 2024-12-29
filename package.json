@@ -11,6 +11,7 @@
     "build:icons": "pnpm run --filter @v3ms/icons build",
     "lib:icons": "pnpm run --filter @v3ms/icons lib",
     "build:utils": "pnpm run --filter @v3ms/utils build",
+    "build": "pnpm run --filter @v3ms/playground build",
     "prepare": "husky install",
     "first": "pnpm build:utils && pnpm build:icons",
     "demo": "pnpm first && pnpm serve",
